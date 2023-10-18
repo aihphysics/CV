@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.25)  27 JUL 2023 21:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.9.2)  18 OCT 2023 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,47 +965,38 @@ nput line 50.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 51.
+nput line 52.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
- input line 52.
-
-(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands1.fd)
-LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <12> not 
-available
-(Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 52.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 59.
+(Font)              scaled to size 9.0pt on input line 60.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 9.0pt on input line 63.
+(Font)              scaled to size 9.0pt on input line 64.
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 6
-7.
+8.
 
 (/usr/share/texmf-dist/tex/latex/inconsolata/ts1zi4.fd
 File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `TS1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 67.
+(Font)              scaled to size 9.0pt on input line 68.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/inconsolata/i4-t1-0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fonta
 wesome5/fa5brands0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5f
 ree2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr
-/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands1.enc}{/usr/share/texmf
--dist/fonts/enc/dvips/inconsolata/i4-ts1.enc} <./figures//Headshot.png>] (./cv.
-aux)
+/share/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc} <./figures//Headshot.
+png>] (./cv.aux)
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31303 strings out of 477985
- 637792 string characters out of 5840058
+ 31284 strings out of 477985
+ 637243 string characters out of 5840059
  1880388 words of memory out of 5000000
- 50972 multiletter control sequences out of 15000+600000
- 517821 words of font info for 51 fonts, out of 8000000 for 9000
+ 50958 multiletter control sequences out of 15000+600000
+ 517560 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  93i,9n,99p,436b,1020s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Reg
@@ -1014,10 +1005,10 @@ e-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-z
 i4b.pfb></usr/share/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.
 pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on cv.pdf (1 page, 5226295 bytes).
+Output written on cv.pdf (1 page, 5226942 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
