@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage{textpos}
 \usepackage{calc}
@@ -6,9 +6,11 @@
 \usepackage{transparent}
 \usepackage{hyperref}
 \usepackage{eso-pic}
+\usepackage{ragged2e}
 \usepackage{cancel}
 \usepackage{amsmath}
 \usepackage{fixmath}
+\usepackage{multicol}
 \usepackage{setspace}
 \usepackage{blindtext}
 \usepackage{xcolor}
@@ -16,181 +18,145 @@
 \usepackage[a4paper]{geometry}
 \usepackage{enumitem}
 \usepackage[most]{tcolorbox}
-\geometry{margin=0pt, width=210mm, height=297mm}
-\usepackage[scale=0.8]{FiraMono}
-\usepackage{inconsolata}
-\renewcommand*\familydefault{\ttdefault} %% Only 
+\geometry{margin=0.25in, width=210mm, height=297mm}
+\usepackage[onlymath]{sansmathfonts}
+\usepackage[sfdefault,book,lf]{FiraSans}
 \usepackage[T1]{fontenc}
-
 \setlist[itemize]{leftmargin=5pt}
 \setlist[description]{leftmargin=10pt}
 
-\newtcolorbox{bgbox}[1][]{nobeforeafter,leftright skip=0pt,boxrule=0pt,enhanced jigsaw,sharp corners,#1}
-%%\newtcolorbox{bgbox}[1][]{nobeforeafter,leftright skip=0pt,boxrule=0pt,enhanced jigsaw,round corners,#1}
+\definecolor{dt}{RGB}{1, 77, 78} 
 
+
+\newtcolorbox{bgbox}[1][]{nobeforeafter,leftright skip=0pt,boxrule=0pt,enhanced jigsaw,rounded corners,#1,arc=10pt}
 \graphicspath{{figures/}}
-\definecolor{deepgray}{rgb}{0.2, 0.2, 0.2}
 
 \begin{document}
-\noindent
-\begin{bgbox}[height=\paperheight,colback=darkgray,width=0.3\textwidth,rightrule=0pt,colframe=black]
-    \vspace{0.6cm}
-    \begin{center}
-        \color{white}{\Large{Alina Isobel Hagan}}\\
-        \color{white}{Physicist, Programmer, Scientist, Maker}
-        %%\large{Alina Isobel Hagan.}
-        \vspace{-0.3cm}
-    \end{center}
-    %%\begin{center}
-    %%    \begin{tikzpicture} 
-    %%        \begin{scope}
-    %%            \clip [rounded corners=2cm] (0,0) rectangle coordinate (centerpoint) (4,4cm); 
-    %%            \node [inner sep=0pt] at (centerpoint) {\includegraphics[width=4.0cm, keepaspectratio ]{Headshot3.png}}; 
-    %%        \end{scope}
-    %%    \end{tikzpicture}
-    %%\end{center}
-    %%\vspace{1cm}
-    \begin{flushleft}
-        \large{
-        \color{white}{
-        \section*{Skills}
-        \begin{itemize}
-            \item C++ \& CMake
-            \item Make \& Ninja
-            \item Development of Multi-Threaded programs
-            \item Project Management
-            \item GitLab \& GitHub
-            \item Collaboration \& Teamwork
-            \item LaTeX, Python, Rust \& Linux
-            \item Adaptability \& Learning Agility
-            \item High throughput computing \& grid scheduling
-            \item Computer Modelling \& Simulation
-            \item Advanced statistical methods for data analysis
-            \item TB scale data analytics
-            \item Data visualisation
-            \item BDT \& Neural Network design
-            \item ROOT Data Analysis Framework
-            
-        \end{itemize}
-        }}
-    \end{flushleft}
-    \vspace{4cm}
-    \begin{center}
-        {
-            \color{white}{\faIcon{github} \href{https://github.com/aihphysics}{aihphysics}}\\
-            \color{white}{\faIcon{link} \href{aihphysics.github.io}{aihphysics.github.io}}\\
-            \color{white}{\faIcon{envelope} \href{mailto:alina-hagan@outlook.com}{alina-hagan@outlook.com}}\\
-            \color{white}{\faIcon{map-marker-alt} UK}\\
-        }
-    \end{center}
-\end{bgbox}%
-\begin{bgbox}[height=\paperheight,colback=white,width=0.7\textwidth]
-    \vspace{0.6cm} 
-    \flushleft
-    \begin{description}[leftmargin=0pt]
-        \setlength{\itemindent}{0pt}
-        \item \underline{Experience \& Education}:
-        \vspace{-6pt}
-        \begin{description}[leftmargin=0pt]
-            \setlength{\itemsep}{5pt}
-            \item[2020-2024] \scalebox{0.97}{Analysis Lead \& Trigger Signature Expert - ATLAS Collaboration}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=10pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{Oversaw live data collection \& coordination with international experts}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Updating ATLAS Validation tools for evolved frameworks in C++ \& CMake}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Lead a worlds-first analysis exploring gluon structure in the proton}}}
-            \end{itemize}
-            \item[2020-2024] \scalebox{0.97}{PhD - Lancaster University, ATLAS, \& CERN}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=10pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{High-Energy Particle Physics, Supervised by Vato Kartvelishvili}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Development of performant C++ analysis frameworks for fast experiment iteration}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Machine Learning \& advanced statistical techniques for data guided analysis}}}
-            \end{itemize}
-            \item[2024-ongoing] \scalebox{0.97}{Director - Lancaster And Morecambe Makers.}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=10pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{Coordinating conversion to Community Interest Community}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Representing student interests as student liasion}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Running public repair cafes \& promoting maker ideals}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Organising new promotional materials \& rebranding}}}
-            \end{itemize}
-            \item[2019]  \scalebox{0.97}{Nuclear \& Hadron Physics Research Group Internship - UoG.}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=10pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{Design of Novel Graph Neural Networks for the Crystal Ball detector}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Developed training \& testing framework in tensorflow \& python}}}
-            \end{itemize}
-            \item[2015-2020] \scalebox{0.97}{MSc, University of Glasgow, $1^{\text{st}}$ Class.}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=10pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{Measurements of $b$-jet substructure.}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Exploration of novel physics-motivated methods of data purification.}}}
-            \end{itemize}
-            \item[2021-2024] \scalebox{0.97}{Post Graduate Teaching Assistant - Lancaster University}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=10pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{Assisting students in practical \& theoretical contexts}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Communication \& teaching of complex physics ideas}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Administrative efforts in grading, identiying \& aiding struggling students}}}
-            \end{itemize}
-            \item[2022-2023] \scalebox{0.97}{High School Physics Outreach - Lancaster University}
-        \end{description}
-        \vspace{4pt}
-        \item \underline{\href{https://www.research.lancs.ac.uk/portal/en/people/alina-hagan}{Communications, Papers \& Conferences}}:
-        \vspace{-6pt}
-        \begin{description}[leftmargin=0pt]
-            \setlength{\itemsep}{0pt}
-            \item[Ongoing] \textcolor{deepgray}{\firamonolining{\small{Gluon TMD Extraction, analysis paper.}}}
-            \item[2023] \textcolor{deepgray}{\firamonolining{\small{\href{https://indico.cern.ch/event/1340942/}{LHCC} - $B$-Hadron reconstruction in early ATLAS Run 3 data }}}
-            \item[2023] \textcolor{deepgray}{\firamonolining{\small{ATLAS Week, Early Career Scientist Session - Gluon TMDs at ATLAS }}}
-            \item[2023] \textcolor{deepgray}{\firamonolining{\small{\href{https://indico.in2p3.fr/event/28579/}{Beauty 2023} - New Heavy Flavour states in ATLAS \& $B$-Hadron reconstruction in early ATLAS Run 3 data }}}
-            \item[2023] \textcolor{deepgray}{\firamonolining{\small{\href{https://indico.cern.ch/event/1213416/}{Quarkonia as Tools 2023} - Inclusive quarkonium production. }}}
-            \item[2022] \textcolor{deepgray}{\firamonolining{\small{\href{https://indico.cern.ch/event/1077305/}{ATLAS UK Annual Meeting 2022} - Precision physics with quarkonia. }}}
-            \item[2022] \textcolor{deepgray}{\firamonolining{\small{\href{https://indico.cern.ch/event/1084752/}{Quarkonia as Tools 2022} - Quarkonium \& TMDs in pp. }}}
-        \end{description}
-        \vspace{4pt}
-        \item \underline{Independent Projects}:
-        \vspace{-6pt}
-        \begin{description}
-            \setlength{\itemsep}{5pt}
-            \item[2022,2024] \href{https://github.com/aihphysics/terminal_rendering}{Terminal Renderer}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=0pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{A simplified renderer with no dependencies for the terminal}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Written in C++, under refactor to render .stl \& .obj formats}}}
-            \end{itemize}
-            \item[2023-2024] \href{https://github.com/aihphysics/pirhana-f5000}{Model Rocketry}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=0pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{Design \& construction of high-power model rockets}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Integration of multiple different manufacturing techniques}}}
-            \end{itemize}
-            \item[2024] \href{https://github.com/aihphysics/rs_wave_eqn}{Wave Equation}
-            \vspace{-4pt}
-            \begin{itemize}[leftmargin=0pt]
-                \setlength{\itemsep}{-2pt}
-                \item \textcolor{deepgray}{\firamonolining{\small{Toy simulator of a solution of the wave equation}}}
-                \item \textcolor{deepgray}{\firamonolining{\small{Written in Rust, WASM bindings \& web interface under development}}}
-            \end{itemize}
-        \end{description}
-        \vspace{6pt}
-        \item \underline{Other}:
-        \vspace{-6pt}
-            \begin{description}[leftmargin=0pt]
-            \item[Personal Information] \textcolor{deepgray}{\firamonolining{\small{Age - 26, Nationality - UK.}}}
-            \item[Hobbies] \textcolor{deepgray}{\firamonolining{\small{Film \& digital photography, running, climbing, 3D printing, CAD modelling, screenprinting, laser cutting, lathework}}}
-        \end{description}
-    \end{description}
+\pagenumbering{gobble}
+\vspace{-15pt}
+\noindent\begin{bgbox}[height=0.05\paperheight,colback=dt,width=\textwidth]
+    \begin{minipage}[c]{0.4\textwidth}
+        \begin{center}
+            \vspace{-2.5pt}
+            \color{white}{\huge{Alina Isobel Hagan}}\\
+            \color{white}{\normalsize Physicist $\cdot$ Programmer $\cdot$ Scientist $\cdot$ Maker}
+        \end{center}
+    \end{minipage}    
+    \begin{minipage}[c]{0.6\textwidth}
+        \begin{center}
+            \color{white}{
+            \faIcon{github} \href{https://github.com/aihphysics}{aihphysics} $\cdot$ \faIcon{link} \href{https://aihphysics.github.io}{aihphysics.github.io} $\cdot$ \faIcon{envelope} \href{mailto:alina-hagan@outlook.com}{alina-hagan@outlook.com}
+            }\\
+            \color{white}{\faIcon{phone-square} +44 7793 450903 $\cdot$ \faIcon{map-marker-alt} UK}
+        \end{center}
+    \end{minipage}
 
 \end{bgbox}
+    \flushleft
+    \begin{description}[leftmargin=6pt]
+        \item \Large{\textbf{\textcolor{dt}{About Me}}\vspace{-8pt}}
+        \textcolor{dt}{\rule{\textwidth-10pt}{1pt}}
+        \normalsize
+        I am a developer and data scientist with a diverse array of experience and a background in high energy particle physics. I am leaving academia to apply my skills in industry.
+        \item \Large{\textbf{\textcolor{dt}{Skills}}\vspace{-8pt}}
+        \textcolor{dt}{\rule{\textwidth-10pt}{1pt}}
+        \normalsize
+        \vspace{-10pt}
+        \begin{multicols}{3}
+            \begin{itemize}
+                \setlength{\itemsep}{-1pt}
+                \item Competent with multiple programming languages: Rust, C, C++, and python
+                \item Exposure to Java, Javascript, HTML \& CSS, Octave \& Matlab.
+                \item Experience in Multithreaded development and exposure to asynchronous programming
+                \item Proficient with GitLab and GitHub for version control and collaboration.
+                \item Extensive work producing graphics and data visualisations with Python and C++ libraries.
+                \item Expertise in advanced statistical methods and data analysis techniques, both Frequentist and Bayesian. Extremely familiar with common Python and C++ data analytics tools:  Tensorflow, Python Scipy, Numpy, Pandas, Matplotlib, ROOT, Boost. 
+                \item Capable and experienced when working with multiple machine learning paradigms. Supervised learning, Graph and Convolutional networks, multivariate discriminiators.
+                \item Experience building web connected applications and making open source contributions
+                \item Very familiar with linux OS's, Daily user
+                \item Intimate knowledge of linear algebra, calculus, group theory, and quantum mechanics
+                \item Exposure to containerization solutions Docker, Docker Compose.
+                \item Experienced in computer modeling, and simulation: Finite differencing, finite element modelling, RK methods
+            \end{itemize}
+        \end{multicols}
+        \vspace{-2pt}
+    \end{description}
+    \vspace{-10pt}
+    \begin{multicols*}{2}
+    \begin{description}[leftmargin=6pt]
+        \item \Large{\textbf{\textcolor{dt}{Experience \& Employment}}\vspace{-8pt} \textcolor{dt}{\rule{0.5\textwidth-10pt}{1pt}}}\normalsize\\\vspace{5pt}  
+            {\firamedium ATLAS Collaboration - CERN } \hfill Oct 2020 - current \\
+            \underline{Analysis Lead and Trigger Signature expert.} \vspace{-7pt}
+            \begin{justify} \noindent Developed and maintained tools using C++ and CMake, enhanced efficiency and accuracy of data analysis processes. Oversaw live data collection and coordinated with a large team of international experts, ensured robust data integrity and system performance. \end{justify}
+            \vspace{-3pt}
+            {\firamedium Lancaster University } \hfill Jan 2021 - Jun 2024 \\
+            \underline{Post Graduate Teaching Assistant.} \vspace{-7pt}
+            \begin{justify} \noindent Taught in practical and theoretical contexts; programming, simulation, calculus, circuits, Fourier analysis, and particle physics. Communicated complex physics concepts demonstrating excellent communication skills. Managed grading, targeted support to struggling students.\end{justify}
+            \vspace{-3pt}
+            {\firamedium Lancaster and Morecambe Makers} \hfill Jun 2024 - current\\
+            \underline{Director and Board Member.} \vspace{-7pt}
+            \begin{justify} \noindent Coordinating conversion to Community Interest Company. Representing student interests as student liasion. Running public repair cafes and promoting maker ideals. Organising new promotional materials and rebranding.\end{justify} 
+            \vspace{-3pt}
+            {\firamedium University of Glasgow} \hfill Jun 2019 - Sep 2019\\ 
+            \underline{Nuclear and Hadron Physics Research Group Internship} \vspace{-7pt}
+            \begin{justify} \noindent Design of cutting-edge Graph Neural Networks for clustering. Developed pipeline for training and testing experimental networks. Tensorflow, Python Scipy, Numpy, Pandas, Matplotlib. \end{justify}
+            \vspace{-3pt}
+            {\firamedium University of Glasgow} \hfill Jun 2020 - Sep 2020\\ 
+            \underline{Experimental Particle Physics Internship} \vspace{-7pt}
+            \begin{justify} \noindent Statistical analysis of CERN data. Utilised bayesian methods for unfolding detector effects and correcting for experimental biasing. \end{justify}
+            \vspace{-3pt}
+            {\firamedium Multiple organisations} \hfill Jan 2021 - current 
+            \underline{\href{https://www.research.lancs.ac.uk/portal/en/people/alina-hagan}{Conference Work \& Communications}} \vspace{-7pt}
+            \begin{justify} \noindent Seasoned presenter, several talks at both national and international conferences such as Beauty 2023 and the Large Hadron Collider Committee. Author of two conference papers. Third publication in progress.\end{justify}
+
+        \item \Large{\textbf{\textcolor{dt}{Education}}\vspace{-8pt} \textcolor{dt}{\rule{0.5\textwidth-10pt}{1pt}}}\normalsize\\\vspace{5pt}  
+        {\firamedium High Energy Particle Physics PhD } \hfill Oct 2020 - current \\
+        \underline{Lancaster University, ATLAS Collaboration, CERN} \vspace{-7pt}
+        \begin{justify} \noindent Led a pioneering analysis on proton structure, demonstrating strong analytical and problem-solving skills. Highly competent in applying advanced statistical methods, data modelling techniques and performant programming design principles to evolving problems. Awaiting viva.\end{justify}
+        
+        {\firamedium Integrated Msc (Hons), Physics, $1^{\text{st}}$} \hfill Oct 2015 - Oct 2020 \\
+        \underline{University of Glasgow} \vspace{-7pt}
+        \begin{justify} Modern analysis of $b$-jet substructure with CERN data. Development of novel physics based methods for data purification. \end{justify}
+        \vspace{-14pt}
+        \begin{itemize}
+            \setlength{\itemsep}{-2pt}
+            \item Particle Physics: \hfill A - $100$\%
+            \item Nuclear Physics: \hfill A - $100$\%
+            \item Mathematical Methods: \hfill A - $100$\%
+            \item Group Theory: \hfill A - $\ \:95$\%
+            \item Statistical Mechanics: \hfill A - $\ \:95$\%
+            \item Computer Systems: \hfill A - $\ \:86$\%
+            \item Algorithms \& Data Structures: \hfill A - $\ \:82$\%
+            \item Relativistic Quantum Mechanics: \hfill B - $\ \:79$\%
+        \end{itemize}
+
+        \item \Large{\textbf{\textcolor{dt}{Extracurricular \& Projects}}\vspace{-8pt} \textcolor{dt}{\rule{0.5\textwidth-10pt}{0.2pt}}}\normalsize\\\vspace{5pt}  
+        {\firamedium{\href{https://github.com/aihphysics/terminal_rendering}{Terminal Renderer}}}\\ No dependency C++ toy renderer. Ongoing project.\\ 
+        \vspace{2pt}
+        {\firamedium{\href{https://github.com/aihphysics/pirhana-f5000}{Model Rocketry}}}\\ Design and construction of high-power model rockets.\\
+        \vspace{2pt}
+        {\firamedium{\href{https://github.com/aihphysics/bound_buffer_demo}{Bound Buffer}}}\\ Implementation of a bounded-buffer solution to the producer-consumer problem.\\
+        \vspace{2pt}
+        {\firamedium{ISSPanel}}\\ TUI statuspanel showing live data from the international space station. Ongoing project.\\
+        \vspace{2pt}
+        {\firamedium{\href{https://github.com/aihphysics/rs_wave_eqn}{Wave Equation}}}\\ Numerical simulations, Rust.\\
+        \vspace{2pt}
+        {\firamedium{Other}}\\\href{https://aihphysics.github.io/photography}{Film and digital photography}, \href{https://aihphysics.github.io/recipes}{cooking}, running, climbing, 3D printing, CAD modelling, and lathework.\\
+    \end{description}
+    \end{multicols*}
+
 
 \end{document}
+    
+%\end{bgbox}\\
+%%\item \underline{\href{https://www.research.lancs.ac.uk/portal/en/people/alina-hagan}{\large{Communications, Papers and Conferences}}}\\
+%%        \vspace{4pt}
+%%        {\setstretch{0.8}\textcolor{deepgray}{\firamonolining{\small{I am an excellent communicator and I have been selected on multiple occasions to represent my analysis team and my subgroup at international conferences and collaboration meetings.}}}\\}
+%%        \vspace{-8pt}
+%%        \begin{description}
+%%            \setlength{\itemsep}{-4pt}
+%%            \item[2023] \textcolor{deepgray}{\firamonolining{\small{{\href{https://indico.cern.ch/event/1340942/}{LHCC}, $B$-Hadron reconstruction in early ATLAS Run 3 data }}}}
+%%            \item[2023] \textcolor{deepgray}{\firamonolining{\small{\href{https://indico.cern.ch/event/1213416/}{Quarkonia as Tools 2023}, Inclusive quarkonium production. }}}
+%%            \item[2022] \textcolor{deepgray}{\firamonolining{\small{\href{https://indico.cern.ch/event/1077305/}{ATLAS UK Annual Meeting 2022}, Precision physics with quarkonia.}}}
+%%            \item[2022] \textcolor{deepgray}{\firamonolining{\small{\href{https://indico.cern.ch/event/1084752/}{Quarkonia as Tools 2022}, Quarkonium and TMDs in $pp$.}}}
+%%        \end{description} 
